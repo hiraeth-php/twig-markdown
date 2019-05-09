@@ -1,0 +1,25 @@
+{
+    "name": "hiraeth/twig-markdown",
+    "description": "Twig markdown extension for the Hiraeth Nano Framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":  "Matthew J. Sahagian",
+            "email": "matthew.sahagian@gmail.com",
+            "role":  "Lead Architect / Developer"
+        }
+    ],
+    "require": {
+        "hiraeth/app": "^2.0",
+        "hiraeth/markdown": "^1.0",
+        "aptoma/twig-markdown": "^2.1"
+    },
+    "type": "opus-package",
+    "extra": {
+        "opus": {
+            "hiraeth/app": {
+                "config": ""
+            }
+        }
+    }
+}
