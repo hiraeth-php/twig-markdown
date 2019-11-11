@@ -14,6 +14,9 @@
         "hiraeth/markdown": "^1.0",
         "aptoma/twig-markdown": "^2.1"
     },
+    "autoload": {
+        "classmap": ["src/"]
+    },
     "type": "opus-package",
     "extra": {
         "opus": {

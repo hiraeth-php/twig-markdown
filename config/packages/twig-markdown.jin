@@ -7,7 +7,7 @@
 	;
 
 	aliases = {
-		"Aptoma\Twig\Extension\MarkdownEngineInterface": "Aptoma\Twig\Extension\MarkdownEngine\ParsedownEngine"
+		"Aptoma\Twig\Extension\MarkdownEngineInterface": "Hiraeth\Twig\ParsedownExtraEngine"
 	}
 
 	;
