@@ -1,29 +1,29 @@
 <?php
 
-namespace Hiraeth\Twig;
+namespace Hiraeth\Twig\Markdown;
 
-use Aptoma\Twig\Extension\MarkdownEngineInterface;
-use ParsedownExtra;
+use Aptoma\Twig\Extension\MarkdownEngineInterface as MarkdownEngine;
+use Hiraeth\Markdown\ParserInterface as Parser;
 
 /**
- * ParsedownExtraEngine.php
  *
- * Maps erusev/parsedown-extra to Aptoma\Twig Markdown Extension
  */
-class ParsedownExtraEngine implements MarkdownEngineInterface
+class Engine implements MarkdownEngine
 {
     /**
-     * @var ParsedownExtra
+     * @var Parser
      */
     protected $engine;
+
 
     /**
      * @param string|null $instanceName
      */
-    public function __construct($instanceName = null)
+    public function __construct(Parser $parser)
     {
-        $this->engine = ParsedownExtra::instance($instanceName);
+        $this->engine = $parser;
     }
+
 
     /**
      * {@inheritdoc}
@@ -33,13 +33,15 @@ class ParsedownExtraEngine implements MarkdownEngineInterface
         return $this->engine->parse($content);
     }
 
+
     /**
      * {@inheritdoc}
      */
     public function getName()
     {
-        return 'erusev/parsedown-extra';
+        return 'hiraeth/markdown';
     }
+
 
     /**
      * Turn on/off escaping within the generated HTML. Should be
@@ -51,6 +53,7 @@ class ParsedownExtraEngine implements MarkdownEngineInterface
     {
         $this->engine->setSafeMode($bool === true);
     }
+
 
     /**
      * Turn on/off escaping HTML in trusted user input.
