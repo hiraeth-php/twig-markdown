@@ -39,6 +39,6 @@ class Engine implements MarkdownEngine
 	 */
 	public function transform($content)
 	{
-		return $this->engine->parse($content);
+		return $this->engine->parse($content ?: '');
 	}
 }
