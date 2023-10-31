@@ -14,14 +14,15 @@
         "classmap": ["src/"]
     },
     "require": {
-        "hiraeth/app": "^2.0",
-        "hiraeth/markdown": "^2.0",
-        "hiraeth/markdown-imp": "^2.0",
+        "hiraeth/app": "^3.0",
+        "hiraeth/markdown": "^3.0",
+        "hiraeth/markdown-imp": "^3.0",
         "aptoma/twig-markdown": "^3.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.0",
-        "hiraeth/commonmark": "^2.0"
+        "phpunit/phpunit": "^10.0",
+        "hiraeth/commonmark": "^3.0"
     },
     "type": "opus-package",
     "extra": {
