@@ -45,8 +45,8 @@
 	; Filters
 	;
 
-	filters = [
+	filters = {
 		"markdown": {
 			"target": "Hiraeth\Twig\Markdown\Filter"
 		}
-	]
+	}
