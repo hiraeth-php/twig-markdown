@@ -7,7 +7,7 @@
 	;
 
 	aliases = {
-		"Aptoma\Twig\Extension\MarkdownEngineInterface": "Hiraeth\Twig\Markdown\Engine"
+
 	}
 
 	;
@@ -42,9 +42,11 @@
 [twig]
 
 	;
-	; Extensions - A list of extension classes
+	; Filters
 	;
 
-	extensions = [
-		"Aptoma\Twig\Extension\MarkdownExtension"
+	filters = [
+		"markdown": {
+			"target": "Hiraeth\Twig\Markdown\Filter"
+		}
 	]

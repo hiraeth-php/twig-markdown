@@ -16,8 +16,7 @@
     "require": {
         "hiraeth/app": "^3.0",
         "hiraeth/markdown": "^3.0",
-        "hiraeth/markdown-imp": "^3.0",
-        "aptoma/twig-markdown": "^3.0"
+        "hiraeth/markdown-imp": "^3.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.0",
