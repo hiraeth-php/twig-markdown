@@ -47,6 +47,9 @@
 
 	filters = {
 		"markdown": {
-			"target": "Hiraeth\Twig\Markdown\Filter"
+			"target": "Hiraeth\Twig\Markdown\Filter",
+			"options": {
+				"is_safe": ["html"]
+			}
 		}
 	}

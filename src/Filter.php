@@ -29,6 +29,12 @@ class Filter
 	 */
 	public function __invoke($markdown)
 	{
+		$lead = preg_match('#^\s+|\t+#', $markdown, $matches);
+
+		if ($lead) {
+			$markdown = preg_replace(sprintf('#^%s#m', $matches[0]), '', $markdown);
+		}
+
 		return $this->parser->parse($markdown);
 	}
 }
