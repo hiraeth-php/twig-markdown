@@ -2,6 +2,7 @@
     "name": "hiraeth/twig-markdown",
     "description": "Twig Markdown extension for the Hiraeth Nano Framework",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "MIT",
     "authors": [
         {
@@ -10,9 +11,6 @@
             "role":  "Lead Architect / Developer"
         }
     ],
-    "autoload": {
-        "classmap": ["src/"]
-    },
     "require": {
         "hiraeth/app": "^3.0",
         "hiraeth/markdown": "^3.0",
@@ -22,6 +20,16 @@
         "phpstan/phpstan": "^1.0",
         "phpunit/phpunit": "^10.0",
         "hiraeth/commonmark": "^3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "test/src"
+        ]
     },
     "type": "opus-package",
     "extra": {

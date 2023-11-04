@@ -27,7 +27,7 @@ class Filter
 	/**
 	 * Execute the filter
 	 */
-	public function __invoke($markdown)
+	public function __invoke(string $markdown): string
 	{
 		$lead = preg_match('#^\s+|\t+#', $markdown, $matches);
 
